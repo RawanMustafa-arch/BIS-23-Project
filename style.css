@@ -1,58 +1,68 @@
-/* General Page Styling */
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
-    margin: 0;
+/* Basic Menu Styling */
+.menu {
+    list-style: none;
     padding: 0;
+    margin: 0;
+    background: #ff6b81;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+/* Hover Effects */
+.menu a:hover {
+    background: #ff4757;
+}
+
+/* Dropdown Styling */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: #ff6b81;
+    list-style: none;
+    padding: 0;
+    width: 200px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    width: 100%;
+}
+
+.dropdown-menu a {
+    padding: 10px;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background: #ff4757;
 }
 
 /* Header Styling */
 header {
-    background-color: #ff6b81;
-    color: white;
-    padding: 20px;
-    font-size: 24px;
+    text-align: center;
+    padding: 20px 0;
 }
 
-/* Calculator Section Styling */
-.calculator {
-    background: white;
-    padding: 20px;
-    max-width: 400px;
-    margin: 50px auto;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-.calculator img {
-    width: 100px;
-}
-
-input {
-    width: 80%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    background: #ff4757;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
-}
-
-button:hover {
-    background: #e84118;
-}
-
-#result {
-    font-size: 20px;
-    margin-top: 15px;
+header h1 {
+    font-size: 60px;
     font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    margin-top: 30px;
 }
